@@ -1,0 +1,25 @@
+---
+abstract: 'Replace builtin functions with ones that log using Log::Any'
+author:
+  - 'Steven Haryanto <stevenharyanto@gmail.com>'
+build_requires:
+  Module::Build: 0.3601
+configure_requires:
+  Module::Build: 0.3601
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Builtin-Logged
+requires:
+  Exporter::Lite: 0
+  SHARYANTO::Proc::ChildError: 0
+  SHARYANTO::String::Util: 0.19
+  Test::More: 0.96
+  perl: 5.010000
+resources:
+  homepage: http://search.cpan.org/dist/Builtin-Logged/
+  repository: http://github.com/sharyanto/perl-Builtin-Logged
+version: 0.01
