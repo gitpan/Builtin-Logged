@@ -8,7 +8,7 @@ use Log::Any '$log';
 use SHARYANTO::Proc::ChildError qw(explain_child_error);
 use SHARYANTO::String::Util qw(ellipsis);
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 our $Max_Log_Output = 1024;
 
@@ -19,25 +19,30 @@ sub system {
     CORE::system(@_);
     if ($log->is_trace) {
         $log->tracef("system() child error: %d (%s)",
-                     $?, explain_child_error($?));
+                     $?, explain_child_error($?)) if $?;
     }
 }
 
 sub my_qx {
     my $arg = join " ", @_;
     if ($log->is_trace) {
-        $log->tracef("my_qx(): %s", $_);
+        $log->tracef("my_qx(): %s", $arg);
     }
-    my $output = qx($arg);
+    my $wa = wantarray;
+    my $output;
+    my @output;
+    if ($wa) { @output = qx($arg) } else { $output = qx($arg) }
     if ($log->is_trace) {
         $log->tracef("my_qx() child error: %d (%s)",
-                     $?, explain_child_error($?));
+                     $?, explain_child_error($?)) if $?;
+        if ($wa) { $output = join("", @output) }
         $log->tracef("my_qx() output (%d bytes%s): %s",
                      length($output),
                      (length($output) > $Max_Log_Output ?
                          ", $Max_Log_Output shown" : ""),
                      ellipsis($output, $Max_Log_Output+3));
     }
+    $wa ? @output : $output;
 }
 
 sub import {
@@ -70,14 +75,14 @@ Builtin::Logged - Replace builtin functions with ones that log using Log::Any
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
  use Builtin::Logged qw(system my_qx);
 
  system "blah ...";
- my $out = my_qx(blah ...);
+ my $out = my_qx("blah ...");
 
 When run, it might produce logs like:
 
@@ -85,6 +90,7 @@ When run, it might produce logs like:
  [TRACE] system() child error: 256 (exited with value 1)
  [TRACE] my_qx(): blah ...
  [TRACE] my_qx() child error: 0 (exited with value 0)
+ [TRACE] my_qx() output (200 bytes): Command output...
 
 =head1 DESCRIPTION
 
