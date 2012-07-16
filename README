@@ -1,43 +1,8 @@
 NAME
-    Builtin::Logged - Replace builtin functions with ones that log using
-    Log::Any
+    Builtin::Logged - Alias for Log::Any::For::Builtins
 
 VERSION
-    version 0.02
-
-SYNOPSIS
-     use Builtin::Logged qw(system my_qx);
-
-     system "blah ...";
-     my $out = my_qx("blah ...");
-
-    When run, it might produce logs like:
-
-     [TRACE] system(): blah ...
-     [TRACE] system() child error: 256 (exited with value 1)
-     [TRACE] my_qx(): blah ...
-     [TRACE] my_qx() child error: 0 (exited with value 0)
-     [TRACE] my_qx() output (200 bytes): Command output...
-
-DESCRIPTION
-    This module provides replacement for some builtin functions (and
-    operators). The replacement behaves exactly the same, except that they
-    are peppered with log statements from Log::Any. The log statements are
-    at "trace" level.
-
-    This module is useful if you already use Log::Any for your application.
-
-EXPORTS
-    *   system
-
-    *   my_qx
-
-        Will provide my_qx(). Use this instead of qx() or backtick. Perl
-        currently does not provide an easy way to override/overload qx().
-
-VARIABLES
-SEE ALSO
-    Log::Any
+    version 0.03
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>

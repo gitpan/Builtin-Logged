@@ -1,10 +1,10 @@
 {
-   "abstract" : "Replace builtin functions with ones that log using Log::Any",
+   "abstract" : "Alias for Log::Any::For::Builtins",
    "author" : [
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "generated_by" : "Dist::Zilla version 4.300002, CPAN::Meta::Converter version 2.112150",
    "license" : [
       "perl_5"
    ],
@@ -29,6 +29,7 @@
             "Exporter::Lite" : 0,
             "SHARYANTO::Proc::ChildError" : 0,
             "SHARYANTO::String::Util" : "0.19",
+            "parent" : 0,
             "perl" : "5.010000"
          }
       },
@@ -49,6 +50,6 @@
          "url" : "http://github.com/sharyanto/perl-Builtin-Logged"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

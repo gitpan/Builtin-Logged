@@ -8,6 +8,7 @@ META.yml
 README
 dist.ini
 lib/Builtin/Logged.pm
+lib/Log/Any/For/Builtins.pm
 t/00-compile.t
 t/01-basics.t
 t/release-pod-coverage.t

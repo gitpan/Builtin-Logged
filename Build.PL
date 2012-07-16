@@ -17,12 +17,12 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "Replace builtin functions with ones that log using Log::Any",
+  "dist_abstract" => "Alias for Log::Any::For::Builtins",
   "dist_author" => [
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Builtin-Logged",
-  "dist_version" => "0.02",
+  "dist_version" => "0.03",
   "license" => "perl",
   "module_name" => "Builtin::Logged",
   "recommends" => {},
@@ -31,6 +31,7 @@ my %module_build_args = (
     "Exporter::Lite" => 0,
     "SHARYANTO::Proc::ChildError" => 0,
     "SHARYANTO::String::Util" => "0.19",
+    "parent" => 0,
     "perl" => "5.010000"
   },
   "script_files" => []
