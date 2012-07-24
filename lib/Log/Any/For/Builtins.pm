@@ -4,8 +4,10 @@ use 5.010;
 use strict;
 use warnings;
 use Log::Any '$log';
+use SHARYANTO::String::Util qw(ellipsis);
+use SHARYANTO::Proc::ChildError qw(explain_child_error);
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 our $Max_Log_Output = 1024;
 
@@ -73,7 +75,7 @@ Log::Any::For::Builtins - Log builtin functions
 
 =head1 VERSION
 
-version 0.03
+version 0.05
 
 =head1 SYNOPSIS
 

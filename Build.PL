@@ -22,7 +22,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Builtin-Logged",
-  "dist_version" => "0.03",
+  "dist_version" => "0.05",
   "license" => "perl",
   "module_name" => "Builtin::Logged",
   "recommends" => {},

@@ -2,7 +2,7 @@ NAME
     Builtin::Logged - Alias for Log::Any::For::Builtins
 
 VERSION
-    version 0.03
+    version 0.05
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>

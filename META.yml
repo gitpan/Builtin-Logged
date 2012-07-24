@@ -27,4 +27,4 @@ requires:
 resources:
   homepage: http://search.cpan.org/dist/Builtin-Logged/
   repository: http://github.com/sharyanto/perl-Builtin-Logged
-version: 0.03
+version: 0.05

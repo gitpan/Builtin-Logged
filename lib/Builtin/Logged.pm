@@ -2,7 +2,7 @@ package Builtin::Logged;
 
 use parent qw(Log::Any::For::Builtins);
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 1;
 # ABSTRACT: Alias for Log::Any::For::Builtins
@@ -16,7 +16,7 @@ Builtin::Logged - Alias for Log::Any::For::Builtins
 
 =head1 VERSION
 
-version 0.03
+version 0.05
 
 =head1 AUTHOR
 
