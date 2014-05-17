@@ -2,7 +2,7 @@ NAME
     Builtin::Logged - Alias for Log::Any::For::Builtins
 
 VERSION
-    This document describes version 0.07 of Builtin::Logged (from Perl
+    This document describes version 0.08 of Builtin::Logged (from Perl
     distribution Builtin-Logged), released on 2014-05-17.
 
 HOMEPAGE

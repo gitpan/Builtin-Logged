@@ -2,7 +2,7 @@ package Builtin::Logged;
 
 use parent qw(Log::Any::For::Builtins);
 
-our $VERSION = '0.07'; # VERSION
+our $VERSION = '0.08'; # VERSION
 
 1;
 # ABSTRACT: Alias for Log::Any::For::Builtins
@@ -19,7 +19,7 @@ Builtin::Logged - Alias for Log::Any::For::Builtins
 
 =head1 VERSION
 
-This document describes version 0.07 of Builtin::Logged (from Perl distribution Builtin-Logged), released on 2014-05-17.
+This document describes version 0.08 of Builtin::Logged (from Perl distribution Builtin-Logged), released on 2014-05-17.
 
 =head1 HOMEPAGE
 

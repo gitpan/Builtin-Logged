@@ -8,7 +8,7 @@ use Log::Any '$log';
 use Proc::ChildError qw(explain_child_error);
 use SHARYANTO::String::Util qw(ellipsis);
 
-our $VERSION = '0.07'; # VERSION
+our $VERSION = '0.08'; # VERSION
 
 our $Max_Log_Output = 1024;
 
@@ -78,7 +78,7 @@ Log::Any::For::Builtins - Log builtin functions
 
 =head1 VERSION
 
-This document describes version 0.07 of Log::Any::For::Builtins (from Perl distribution Builtin-Logged), released on 2014-05-17.
+This document describes version 0.08 of Log::Any::For::Builtins (from Perl distribution Builtin-Logged), released on 2014-05-17.
 
 =head1 SYNOPSIS
 

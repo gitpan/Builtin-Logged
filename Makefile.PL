@@ -22,7 +22,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Builtin::Logged",
   "PREREQ_PM" => {
     "Log::Any" => 0,
-    "Proc::ChildError" => "0.28",
+    "Proc::ChildError" => "0.01",
     "SHARYANTO::String::Util" => "0.19"
   },
   "TEST_REQUIRES" => {
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     "Test::More" => "0.96",
     "UUID::Random" => 0
   },
-  "VERSION" => "0.07",
+  "VERSION" => "0.08",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -50,7 +50,7 @@ my %FallbackPrereqs = (
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
   "Log::Any" => 0,
-  "Proc::ChildError" => "0.28",
+  "Proc::ChildError" => "0.01",
   "SHARYANTO::String::Util" => "0.19",
   "Test::More" => "0.96",
   "UUID::Random" => 0
