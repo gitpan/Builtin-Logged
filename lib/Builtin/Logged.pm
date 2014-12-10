@@ -2,7 +2,7 @@ package Builtin::Logged;
 
 use parent qw(Log::Any::For::Builtins);
 
-our $VERSION = '0.08'; # VERSION
+our $VERSION = '0.09'; # VERSION
 
 1;
 # ABSTRACT: Alias for Log::Any::For::Builtins
@@ -19,7 +19,7 @@ Builtin::Logged - Alias for Log::Any::For::Builtins
 
 =head1 VERSION
 
-This document describes version 0.08 of Builtin::Logged (from Perl distribution Builtin-Logged), released on 2014-05-17.
+This document describes version 0.09 of Builtin::Logged (from Perl distribution Builtin-Logged), released on 2014-12-10.
 
 =head1 HOMEPAGE
 
@@ -27,7 +27,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/Builtin-Lo
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-Builtin-Logged>.
+Source repository is at L<https://github.com/perlancar/perl-Builtin-Logged>.
 
 =head1 BUGS
 
@@ -39,11 +39,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2014 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

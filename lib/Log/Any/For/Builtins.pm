@@ -1,14 +1,15 @@
 package Log::Any::For::Builtins;
 
+our $DATE = '2014-12-10'; # DATE
+our $VERSION = '0.09'; # VERSION
+
 use 5.010001;
 use strict;
 use warnings;
 use Log::Any '$log';
 
 use Proc::ChildError qw(explain_child_error);
-use SHARYANTO::String::Util qw(ellipsis);
-
-our $VERSION = '0.08'; # VERSION
+use String::Trim::More qw(ellipsis);
 
 our $Max_Log_Output = 1024;
 
@@ -78,7 +79,7 @@ Log::Any::For::Builtins - Log builtin functions
 
 =head1 VERSION
 
-This document describes version 0.08 of Log::Any::For::Builtins (from Perl distribution Builtin-Logged), released on 2014-05-17.
+This document describes version 0.09 of Log::Any::For::Builtins (from Perl distribution Builtin-Logged), released on 2014-12-10.
 
 =head1 SYNOPSIS
 
@@ -128,7 +129,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/Builtin-Lo
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-Builtin-Logged>.
+Source repository is at L<https://github.com/perlancar/perl-Builtin-Logged>.
 
 =head1 BUGS
 
@@ -140,11 +141,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2014 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
